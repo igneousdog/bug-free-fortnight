@@ -1,0 +1,26 @@
+import random
+
+def sum(a, b):
+    return (a + b)
+
+#n = int(input('How many dice: '))
+#m1 = int(input('Min value: '))
+#m2 = int(input('Max value: '))
+
+n=4
+m1=-1
+m2=1
+b=0
+
+
+values = range(n)
+
+for i in values:
+    print(i,end=' ')
+    a = random.randint(m1,m2)
+    b = sum(a,b)
+    print(a,end=' ')
+    print(b)
+    #print("==")
+    
+print(n,"dice, sum ",b)
